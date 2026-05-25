@@ -79,7 +79,7 @@ export default function TattooStudioSite() {
               <div className="flex flex-col">
                 <span className="text-3xl font-black tracking-tighter">
                   <span className="text-orange-600 group-hover:text-yellow-400 transition-colors duration-300">
-                    VENTATTO
+                    VENTATTOO
                   </span>
                   <span className="text-white"> STUDIO</span>
                 </span>
