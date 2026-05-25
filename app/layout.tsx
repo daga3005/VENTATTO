@@ -7,7 +7,7 @@ import "./globals.css";
 //const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ink Studio | Tattoo Art Studio",
+  title: "Ventatto | Tattoo Art Studio",
   description: "Arte sobre piel - Estudio profesional de tatuajes",
 };
 

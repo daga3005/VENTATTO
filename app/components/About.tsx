@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { artist } from "../utils/definitions";
+import { artist, socialNetworks } from "../utils/definitions";
+import Link from "next/link";
 
 export default function AboutMe() {
   const [activeTab, setActiveTab] = useState("bio");
@@ -22,7 +23,7 @@ export default function AboutMe() {
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-orange-600/20 backdrop-blur-sm border border-orange-600/50">
             <span className="text-orange-400 text-sm font-semibold uppercase tracking-wider animate-pulse">
-              ✦ CONOCÉ AL ARTISTA ✦
+              ✦ CONOCE AL ARTISTA ✦
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4">
@@ -31,7 +32,7 @@ export default function AboutMe() {
             </span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Conocé al artista detrás de cada diseño, su historia, técnica y pasión por el arte en la piel.
+            Conoce al artista detrás de cada diseño, su historia, técnica y pasión por el arte en la piel.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-600 to-red-600 mx-auto mt-6" />
         </div>
@@ -48,8 +49,10 @@ export default function AboutMe() {
             <div className="relative bg-black/50 backdrop-blur-sm rounded-2xl p-4 border border-orange-600/30">
               <div className="aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-br from-neutral-800 to-neutral-900">
                 {/* Imagen del artista - Reemplazar con tu foto real */}
-                <img
-                  src="https://placehold.co/800x1000/1a1a1a/orange?text=VENTATTO"
+                <Image
+                width={'437'}
+                height={'576'}
+                  src="/sebas-gris.jpg"
                   alt={`${artist.alias} - Artista del tatuaje`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -183,12 +186,12 @@ export default function AboutMe() {
 
             {/* Botones de acción */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex-1 group relative py-3 rounded-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold uppercase tracking-wider hover:shadow-xl hover:shadow-orange-600/50 transition-all duration-300 hover:scale-105">
+              <a href={socialNetworks[3].url} className="text-center flex-1 group relative py-3 rounded-full bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold uppercase tracking-wider hover:shadow-xl hover:shadow-orange-600/50 transition-all duration-300 hover:scale-105">
                 <span className="relative z-10">📅 Agendar cita</span>
-              </button>
-              <button className="flex-1 py-3 rounded-full border-2 border-orange-600 text-orange-400 font-bold uppercase tracking-wider hover:bg-orange-600 hover:text-white transition-all duration-300">
+              </a>
+              <Link href={'/galery'} className="text-center flex-1 py-3 rounded-full border-2 border-orange-600 text-orange-400 font-bold uppercase tracking-wider hover:bg-orange-600 hover:text-white transition-all duration-300">
                 📸 Ver portafolio
-              </button>
+              </Link>
             </div>
 
             {/* Frase personal */}

@@ -1,8 +1,8 @@
 'use client'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import Portfolio from './components/Portfolio'
 import Galeria from './components/Galery';
+import Testimonials from './components/Testimonials';
 
 
 export default function Home() {
@@ -11,8 +11,9 @@ export default function Home() {
     <div className="bg-neutral-900 min-h-screen">
 
       <Hero />
-      <Galeria/>
-      <Footer/>
+      <Galeria featured/>
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

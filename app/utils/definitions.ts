@@ -7,8 +7,8 @@ export const artist = {
   email: 'sebastianvento62@gmail.com',
   phone: '+53 63677204',
   address: {
-    province: "Cienfuegos",
-    municipality: "Cienfuegos",
+    city: "Cienfuegos",
+    country: "Cuba",
     street: "Calle 47 entre 58 y 60 #5803",
     fullAddress: "Calle 47 entre 58 y 60 #5803, Cienfuegos, Cuba"
   },
@@ -40,7 +40,7 @@ export const artist = {
     {
       name: "WhatsApp",
       icon: "💬",
-      url: "https://wa.me/63677204",
+      url: "https://wa.me/+5363677204",
       handle: "",
       color: "hover:text-green-500",
       active: true
@@ -53,7 +53,7 @@ export const artist = {
     phrase: "Realismo, lettering y puntillismo de arrastre: tres técnicas, una sola firma.",
     colors: ["Black and White", "Set de Grises"],
     bio: "Apasionado desde pequeño del dibujo y el arte de la piel. Mi viaje en el mundo del tatuaje comenzó hace más de un año, y desde entonces no he parado de crecer y aprender. Cada día busco superarme y ofrecer lo mejor de mí en cada diseño.",
-    philosophy: "Creo que un tatuaje no es solo tinta bajo la piel, es una historia, un recuerdo, una parte de quien sos. Por eso me tomo el tiempo de escuchar a cada cliente, entender su idea y transformarla en arte único y personalizado.",
+    philosophy: "Creo que un tatuaje no es solo tinta bajo la piel, es una historia, un recuerdo, una parte de quien eres. Por eso me tomo el tiempo de escuchar a cada cliente, entender su idea y transformarla en arte único y personalizado.",
     experience: "1 año de experiencia",
     role: "Tatuador Especialista",
   },
@@ -63,7 +63,7 @@ export const artist = {
     { name: "Puntillismo de arrastre", icon: "✨", description: "Técnica única de puntos que crean textura y movimiento" },
   ],
   achievements: [
-    { number: "50+", label: "Clientes felices" },
+    { number: "100+", label: "Clientes felices" },
     { number: "100+", label: "Tatuajes realizados" },
     { number: "3", label: "Técnicas dominadas" },
     { number: "365", label: "Días de pasión" },

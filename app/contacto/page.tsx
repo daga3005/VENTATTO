@@ -4,7 +4,9 @@ export default function ContactoPage(){
 
 
     return(
-        
-        <Contacto/>
+         <div className="bg-neutral-900 min-h-screen">
+           <Contacto/>
+         </div>
+       
     )
 }

@@ -1,9 +1,12 @@
 import AboutMe from "../components/About";
 
 
-export default function AboutMePage(){
+export default function AboutMePage() {
 
-    return(
-        <AboutMe/>
+    return (
+        <div className="bg-neutral-900 min-h-screen">
+            <AboutMe />
+        </div>
+
     )
 }

@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-orange-500/50 bg-black/50 backdrop-blur-sm cursor-pointer">
             {/* Placeholder - Reemplaza la URL con tu imagen real */}
             <img 
-              src="/chino.jpg" 
+              src="/sebas-yellow.jpg" 
               alt={`${alias} avatar`}
               className="w-full h-full object-cover"
             />
@@ -99,7 +99,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-10 border-t border-orange-600/20">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-yellow-400">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-yellow-400">100+</div>
             <div className="text-gray-400 text-sm mt-1">Tatuajes realizados</div>
           </div>
           <div>
